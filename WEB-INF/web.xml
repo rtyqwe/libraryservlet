@@ -1,0 +1,100 @@
+<web-app>
+  <display-name>Example Application</display-name>
+  <description>Just serves as an example.</description>
+
+  <resource-ref>
+    <description>
+      Resource reference to a factory for java.sql.Connection
+      instances that may be used for talking to the database
+      that is configured in server.xml.
+    </description>
+    <res-ref-name>jdbc/testdb</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+
+  <servlet>
+    <servlet-name>jsp</servlet-name>
+    <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+    <init-param>
+      <param-name>fork</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <init-param>
+      <param-name>xpoweredBy</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jsp</servlet-name>
+    <url-pattern>*.jsp</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>PD_B1B2</servlet-name>
+    <description>PD_B1B2</description>
+    <servlet-class>PD_B1B2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PD_B1B2</servlet-name>
+    <url-pattern>/servlet/PD_B1B2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PD_S1</servlet-name>
+    <description>PD_S1</description>
+    <servlet-class>PD_S1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PD_S1</servlet-name>
+    <url-pattern>/servlet/PD_S1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PD</servlet-name>
+    <description>PD</description>
+    <servlet-class>PD</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PD</servlet-name>
+    <url-pattern>/servlet/PD</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Paper</servlet-name>
+    <description>Paper</description>
+    <servlet-class>Paper</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Paper</servlet-name>
+    <url-pattern>/servlet/Paper</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>P2B</servlet-name>
+    <description>P2B</description>
+    <servlet-class>P2B</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>P2B</servlet-name>
+    <url-pattern>/servlet/P2B</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>Copycat</servlet-name>
+    <description>Copycat</description>
+    <servlet-class>Copycat</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Copycat</servlet-name>
+    <url-pattern>/servlet/Copycat</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+
+</web-app>
+

@@ -1,0 +1,22 @@
+<html> 
+<head> <title>Search Page for Author/Paper information</title> </head> 
+<body bgcolor=white> 
+<h1>Search Page for Author/Paper information</h1> 
+<p><h4>Please choose an between Author or Paper:</h4><p>
+<!-- form tag --> 
+<form method=get action=servlet/PD><!-- changed to servlet/PD--> 
+
+<!-- drop down box --> 
+<SELECT name="dropdown">
+<OPTION SELECTED>Author
+<OPTION>Paper
+</SELECT>
+<!-- submit button --> 
+<input type=text name = "keyword" size = 40> 
+<p> <input type=submit name=optional value="Submit">
+	<input type=hidden name=operationID value="7">
+</form> 
+<p><a href=./index.html>Back to menu</a></p>
+</body> 
+</html>
+

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>I3</title>
+</head>
+<body bgcolor=white>
+
+<p><a href="index.html">Go back to menu</a><p>
+
+<!-- Send to servlet PD -->
+<form method=get action=servlet/PD>
+
+<h3>Add Comments to Paper</h3>
+<p>
+  <label for="paper_ID">Paper ID:</label></br>
+  <input type="text" name="paper_ID" maxlength=11>
+  <small> Field required. </small>
+</p>
+<input type="hidden" name="operationID" value="3">
+<p> <input type=submit name=optional value="Submit"> </p>
+</form>
+
+</body>
+</html>

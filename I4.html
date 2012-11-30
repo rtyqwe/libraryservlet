@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>I4</title>
+</head>
+<body bgcolor=white>
+
+<p><a href="index.html">Go back to menu</a><p>
+
+<!-- Send to servlet PD -->
+<form method=get action=servlet/PD>
+
+<h3>Add a Paper</h3>
+<small> Required fields indicated by (*) </small>
+<p>
+  <label for="id">Submission ID*:</label></br>
+  <input type="text" name="id" maxlength=11>
+</p>
+<p>
+  <label for="paper_ID">Paper ID*:</label></br>
+  <input type="text" name="paper_ID" maxlength=11>
+</p>
+<p>
+  <label for="title_str">Paper Title*:</label></br>
+  <input type="text" name="title_str" maxlength=250>
+</p>
+<p>
+  <label for="authors_str">Author(s)' Names*:</label></br>
+  <input type="text" name="authors_str" maxlength=255></br>
+  <small> If more than one author, please separate each author's name with a comma and a space. </small></br>
+  <small> Example: John Doe, James Smith, Henry Brown </small>
+</p>
+<p>
+  <label for="area">Categorie(s) of Paper:</label></br>
+  <input type="text" name="area" maxlength=60>
+</p>
+<p>
+  <label for="num_abstract_wds">Number of Abstract Words*:</label></br>
+  <input type="text" name="num_abstract_wds" maxlength=11>
+</p> 
+<p>
+  <label for="num_kb">File size of Paper in KB:</label></br>
+  <input type="text" name="num_kb" maxlength=11>
+</p>
+<p>
+  <label for="num_pages">Number of pages:</label></br>
+  <input type="text" name="num_pages" maxlength=11>
+</p>
+<p>
+  <label for="num_revisions">Number of revisions*:</label></br>
+  <input type="text" name="num_revisions" maxlength=11>
+</p>
+<p>
+  <label for="num_title_wds">Word count in the paper title*:</label></br>
+  <input type="text" name="num_title_wds" maxlength=11>
+</p>
+<p>
+  <label for="comments_str">Comments:</label></br>
+  <textarea name="comments_str" cols="60" rows="8" maxlength=280></textarea>
+</p>
+<p>
+  <label for="submit_date">Submit Date:</label></br>
+  <input type="text" name="submit_date" maxlength=100>
+  <small> (YYYY-MM-DD) </small>
+</p>
+<p>
+  <label for="submitter_email">Submitter Email:</label></br>
+  <input type="text" name="submitter_email" maxlength=50>
+</p>
+<p>
+  <label for="submitter_name">Submitter Name:</label></br>
+  <input type="text" name="submitter_name" maxlength=80>
+</p>
+<input type="hidden" name="operationID" value="4">
+<p> <input type=submit name=optional value="Submit"> </p>
+</form>
+
+</body>
+</html>

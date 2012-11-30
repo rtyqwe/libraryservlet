@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>I2</title>
+</head>
+<body bgcolor=white>
+
+<p><a href="index.html">Go back to menu</a><p>
+
+<!-- Send to servlet PD -->
+<form method=get action=servlet/PD>
+
+<h3>Add Citations for Papers</h3>
+<small> Every field is required </small>
+<p>
+  <label for="id">ID:</label></br>
+  <input type="text" name="id" maxlength=11>
+</p>
+<p>
+  <label for="paper1ID">Paper 1 ID:</label></br>
+  <input type="text" name="paper1ID" maxlength=11>
+</p>
+<p>
+  <label for="paper2ID">Paper 2 ID:</label></br>
+  <input type="text" name="paper2ID" maxlength=11>
+</p>
+<p>
+  <label for="is_self_citation">Is self citation?:</label></br>
+  <input type="text" name="is_self_citation" size=1 maxlength=1>
+  <small> (1 for true; 0 for false) </small>
+</p>
+<input type="hidden" name="operationID" value="2">
+<p> <input type=submit name=optional value="Submit"> </p>
+</form>
+
+</body>
+</html>
